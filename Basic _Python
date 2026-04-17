@@ -33,3 +33,36 @@ print(type(x))
 # update 
 x[0]="Riya"
 print(x)
+
+
+##Dict, set->
+c=[1, 1.1, "i"]
+print(c)
+
+d={"animal":"Dog", "bird":"crow"}
+print(d)
+print(d["animal"])
+
+
+#dict
+
+a = {
+    "vegetable": "Carrot", 
+    "fruit": ["apple", "banana"]
+}
+print(len(a["fruit"]))
+
+# conditional stmt
+
+pwd= 'admin2123'
+limit=0
+while (limit<3):
+    entry=input('Enter the passward:')
+    if(pwd==entry):
+        print('password matched')
+        break
+    else:
+        print('not matched, check your passward')
+
+else:
+    print('attempt limit reached')
