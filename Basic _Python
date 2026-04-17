@@ -1,0 +1,35 @@
+a=10
+b="Excellent"
+c=2.5
+d=True
+e= 10+c
+print(a,b,c,d,e)
+print(type(a), type(b),type(c), type(c),type(d), type(e))
+
+
+#### Collection DT
+
+A="Awesome_work"
+print(A[4])
+print(A[-2])
+print(A[2:7])
+
+B=" Bavani Kandan "
+print(B[9:6:-1])
+print(B[-4:-7:-1])
+print(B[-5:-8:-1])
+
+print(B.strip())
+print(B.rstrip())
+print(B.lstrip())
+print(B.lower())
+print(B.upper())
+
+### SET AND DICT 
+x=["abi","rani","kiya"]
+print(x)
+print(type(x))
+
+# update 
+x[0]="Riya"
+print(x)
