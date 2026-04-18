@@ -78,3 +78,39 @@ def remove(text):
 i="Hello All #@!@@#$%"
 c=remove(i)
 print(c)
+
+### Remove punctuation
+import string
+def remove_punctuation(text):
+return text.translate(str.maketrans('', '', string.punctuation))
+# Example usage
+text = "Lets make this NLP more intersting."
+clean_text = remove_punctuation(text)
+print(clean_text)
+
+
+###Bag of words
+from sklearn.feature_extraction.text import CountVectorizer
+# Sample documents
+documents = [
+"I love NLP ",
+"NLP is used to perform a task with text",
+"I love learning NLP"
+]
+# Create the Bag of Words model
+vectorizer = CountVectorizer()
+X = vectorizer.fit_transform(documents)
+# Get feature names and transformed data
+feature_names = vectorizer.get_feature_names_out()
+print("Feature Names:", feature_names)
+print("Bag of Words Model:\n", X.toarray())
+
+
+### N - gram
+def n_grams(text, n):
+words = text.split()
+return [tuple(words[i:i + n]) for i in range(len(words) - n + 1)]
+# Example usage
+text = "The world is too big"
+n = 2
+print(n_grams(text, n))
