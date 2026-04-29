@@ -1,0 +1,103 @@
+import numpy as np
+
+# Creating array object
+
+arr = np.array([[1, 2, 3],
+
+                [4, 2, 5]])
+
+# Printing type of arr object
+
+print("Array is of type: ", type(arr))
+
+# Printing array dimensions (axes)
+
+print("No. of dimensions: ", arr.ndim)
+
+# Printing shape of array
+
+print("Shape of array: ", arr.shape)
+
+# Printing size (total number of elements) of array
+
+print("Size of array: ", arr.size)
+
+# Printing type of elements in array
+
+print("Array stores elements of type: ", arr.dtype) 
+
+
+###########################
+print("###########################")
+###########################
+
+import numpy as np
+
+# Creating array from list with type float
+
+a = np.array([[1, 2, 4], [5, 8, 7]], dtype = 'float')
+
+print ("Array created using passed list:\n", a)
+
+# Creating array from tuple
+
+b = np.array((1 , 3, 2))
+
+print ("\nArray created using passed tuple:\n", b)
+
+###########################
+print("###########################")
+###########################
+
+import numpy as np
+
+# Creating a 2D array
+
+arr = np.array([[1, 2, 3],
+
+                [4, 5, 6],
+
+                [7, 8, 9]])
+
+# Print the original array
+
+print("Original array:")
+
+print(arr)
+
+# Indexing a single element
+
+print("\nElement at row 1, column 2:")
+
+print(arr[1, 2])
+
+###########################
+print("###########################")
+###########################
+
+import numpy as np
+
+# Create a 1D array
+
+arr = np.array([1, 2, 3, 4, 5])
+
+# Add 10 to each element
+
+arr_add = arr + 10
+
+# Multiply each element by 2
+
+arr_mul = arr * 2
+
+# Print the results
+
+print("Original array:", arr)
+
+print("Array after adding 10:", arr_add)
+
+print("Array after multiplying by 2:", arr_mul)
+
+###########################
+print("###########################")
+###########################
+
